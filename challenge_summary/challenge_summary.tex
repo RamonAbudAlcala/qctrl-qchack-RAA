@@ -75,4 +75,26 @@
 \maketitle
 
 This is my attempt on the Q-CTRL challenge, instructions are found here \url{https://docs.q-ctrl.com/boulder-opal/application-notes/q-ctrl-qchack-challenge}.
+
+Some of the resources that helped me understand what is really happening are:
+\begin{itemize}
+\item \url{https://en.wikipedia.org/wiki/Qubit#Physical_implementations}
+\item \url{https://en.wikipedia.org/wiki/Electromagnetic_pulse#Non-nuclear_electromagnetic_pulse_(NNEMP)}
+\item Pulse optimization for error-robust control on cloud-based hardware. \url{https://www.youtube.com/watch?v=ZemwL5mKNXM}
+\end{itemize}
+
+Before this I was thinking of qubits as being unitary vectors in a 2-dimensional complex space, that is, linear combinations of $\vert 0 \rangle$ and $\vert 1 \rangle$ with complex coefficients with norm 1. Hence, I was thinking of qubits as points in a 4-dimensional sphere. So, most of the time I had to rely on my intuition from only having real coefficients and a 2-dimensional sphere. But what I didn't know is that we can remove another degree of freedom by getting rid of the global phase. So qbits can be thought of a slice of the 4-sphere: a 3-sphere. The standard representation of qbits in this way is called a Poincare-Bloch sphere.
+
+% https://en.wikipedia.org/wiki/Hopf_fibration
+
+Unfortunately I did not have enough time to understand all what was needed to finish the challenge. I did manage to get a second pulse for the Hadamard gate which I call \(H2\). I followed the jupyter notes and all changes are made there.
+It seems that \(H2\) has a standard error marginally better than that of the \(H\) provided.\\
+\texttt{
+H estimated probability of getting 1 is 0.4609375\\
+H estimate standard error: 0.015577243301708272\\
+H2 estimated probability of getting 1 is 0.490234375\\
+H2 estimate standard error: 0.015622019483489914\\
+}
+
+But I don't see this as a great improvement (yet!).
 \end{document}
