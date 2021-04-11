@@ -1,2 +1,2 @@
 # qctrl-qchack-RAA
- Q-Ctrl Challenge
+ Q-CTRL QCHack Challenge RAA entry
