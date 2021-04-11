@@ -1,0 +1,78 @@
+\documentclass[reqno]{amsart}
+
+\usepackage[a4paper]{geometry}
+
+%\usepackage{xr-hyper} %load before hyperref
+\usepackage[hidelinks,pdfpagelabels]{hyperref} %hyphenation rules british english
+
+%%Language, Encoding, and Text Formatting
+\usepackage[british]{babel} %hyphenation rules for british english
+%\usepackage[spanish,mexico]{babel} %hyphenation rules mexican spanish
+\usepackage[latin1]{inputenc} %.tex file encoding (input)
+\usepackage[T1]{fontenc} %.pdf/.dvi file encoding (output)
+%\usepackage{datetime} %date and time formatting
+
+%%Mathematics
+\usepackage{amsmath,amssymb,amsfonts,amsthm} %All AMS packages
+\usepackage{mathrsfs} %to use cursive s
+%\usepackage{bbm} %to use the bold 1
+
+%Graphics
+%\usepackage[all,2cell,cmtip]{xy} %xy-pic (place after babel)
+%\UseAllTwocells
+%\UseCrayolaColors
+%\CompileMatrices
+%\usepackage{tikz}
+
+%%Document Format
+\allowdisplaybreaks %lets \[ \] be broken into different pages
+%\usepackage[svgnames]{xcolor} %Colors with the svgnames palette
+%\numberwithin{equation}{section}
+\renewcommand{\theenumi}{\roman{enumi}}
+\usepackage{enumitem}
+
+%%Theorems
+%\theoremstyle{plain}
+%\newtheorem{teo}{Theorem}[section]
+%\newtheorem{prop}[teo]{Proposition}
+%\newtheorem{lem}[teo]{Lemma}
+%\newtheorem{cor}[teo]{Corollary}
+%\theoremstyle{remark}
+%\newtheorem{eje}[teo]{Example}
+%\newtheorem{obs}[teo]{Observation}
+%\newtheorem{rem}[teo]{Remark}
+%\newtheorem*{note}{Note}
+%\theoremstyle{definition}
+%\newtheorem{defi}[teo]{Definition}
+%\newtheorem*{notat}{Notation}
+
+%%Proofs
+%\renewcommand{\qedsymbol}{$\blacksquare$}
+%\renewcommand{\qed}{\hfill\qedsymbol\newline}
+%\renewcommand{\qedhere}{\hfill\qedsymbol}
+\renewenvironment{proof}{\textit{Proof.}$\;$}{\qed}
+
+%%Abbreviations
+
+%%Shorthands
+
+%%Metadata
+\author{Ramón Abud Alcalá}
+\title{Q-CTRL\\ Challenge Summary}
+\date{\today}
+%\date{\formatdate{03}{12}{2017}} %This is how to get a specific date \usepackage{datetime}
+%\thanks{
+%\textcolor{red}{Easy, write later.}
+%\textcolor{blue}{Nasty, consider removal.}
+%\textcolor{violet}{Ugly, rewrite or reword.}
+%\textcolor{teal}{Unclear, ask or think later.}
+%}
+
+%Playspace
+
+
+\begin{document}
+\maketitle
+
+This is my attempt on the Q-CTRL challenge, instructions are found here \url{https://docs.q-ctrl.com/boulder-opal/application-notes/q-ctrl-qchack-challenge}.
+\end{document}
